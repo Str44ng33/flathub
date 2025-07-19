@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.matheus.PlantaFix</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <name>PlantaFix</name>
+  <summary>Aplicativo para encontrar plantas e ecossistemas</summary>
+  <description>
+    <p>PlantaFix é um aplicativo para facilitar a busca e identificação de plantas e ecossistemas, com interface moderna e fácil de usar.</p>
+  </description>
+  <launchable type="desktop-id">com.matheus.PlantaFix.desktop</launchable>
+  <developer_name>Matheus Bruh (Str44ng33)</developer_name>
+  <project_license>GPL-3.0-or-later</project_license>
+  <url type="homepage">https://str44ng33.github.io/PlantaFix</url>
+  <url type="bugtracker">https://github.com/Str44ng33/PlantaFix/issues</url>
+  <provides>
+    <binary>planta-fix</binary>
+  </provides>
+</component>
