@@ -1,0 +1,31 @@
+{
+  "app-id": "com.matheus.PlantaFix",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "42",
+  "sdk": "org.gnome.Sdk",
+  "command": "planta-fix.py",
+  "finish-args": [
+    "--share=network",
+    "--socket=x11",
+    "--socket=wayland",
+    "--device=dri",
+    "--filesystem=host"
+  ],
+  "modules": [
+    {
+      "name": "planta-fix",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p /app/share/planta-fix",
+        "cp -r build/* /app/share/planta-fix/",
+        "install -Dm755 planta-fix.py /app/bin/planta-fix.py"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "./"
+        }
+      ]
+    }
+  ]
+}
